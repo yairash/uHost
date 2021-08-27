@@ -72,6 +72,12 @@ main{
     top: 32px;
 }
 
+#free-package:hover,
+#free-package:active{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.95);
+    border-color: rgb(255, 0, 170); 
+}
+
 #premium-package{
     background: #690303;
     position: relative;
