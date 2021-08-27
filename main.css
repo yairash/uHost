@@ -1,0 +1,122 @@
+#product-overview{
+    /* background: url("freedom.jpg"); */
+    background-image: url("./images/freedom.jpg");
+    background-size: cover;
+    background-position: 0 45%;
+    width: 100%;
+    height: 722px;
+    padding: 10px;
+
+}
+
+.section-title{
+    color: #c82c2c;
+    font-size: 34px;
+    text-align: center;
+}
+
+#product-overview h1{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    top: 32px;
+}
+
+.plan__list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.plan{
+    /* background-color: #7cf0a1; */
+    background-color: #d65d5d;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan-highlighted{
+    background-color: #c32d2d;
+    color: white;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);    
+}
+
+.plan_annotation{
+    color: #e92727;
+    background: rgb(233, 228, 228);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.plan__title{
+    color: #fab8b8;
+}
+
+.plan__price{
+    color: #585858;
+}
+
+.plan-highlighted .plan__title{
+    color: white;
+}
+
+.plan-highlighted .plan__price{
+    color: #4d4c4c;
+}
+
+.plan__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__feature{
+    margin: 8px 0;
+}
+#key-features{
+    background: #c32d2d;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title{
+    margin: 32px;
+    color: white;
+}
+
+.key-features__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.key-feature{
+    display: inline-block;
+    width: 30%;
+}
+
+.key-feature__img{
+    background: white ;
+    width: 128px;
+    height: 128px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto; /*center an elemtent horizontally(circles)*/
+}
+
+.feature__desc{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+

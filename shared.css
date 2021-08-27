@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box; /*includes border and padding of an element*/
+}
+
+body{
+    font-family: 'Arvo', serif;;
+    margin: 0;
+}
+
+.main-header{
+    width: 100%;
+    position: fixed;
+    background-color: #c82c2c;
+    padding: 0px 16px;   
+    top: 0; /*Fixing the margin in the packages page*/
+    z-index: 1;
+}
+
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 72px);
+    vertical-align: middle;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.main-nav__item a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px;
+}
+
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: #fda3a3;
+    border-bottom: 2px solid #ffa9a9;
+}
+
+.main-nav__item--cta a{
+    color: #ff0000;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color: white;
+    background: #ffa9a9;
+    border: none;
+}
+
+.main-footer{
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link{
+    display: inline-block;
+    margin: 0 16px;
+
+}
+
+.main-footer__link a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.main-footer__link a:active,
+.main-footer__link a:hover{
+    color: #ccc;
+}
+
+.plan__button{
+    background: #ff0000;
+    color: white;
+    font: inherit;
+    margin: 6px;
+    border: 1.5px soild #ff0000;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.plan__button:hover,
+.plan__button:active{
+    background: #ff9292;
+}
+
+.plan__button:focus{
+    outline: none;
+}
