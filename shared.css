@@ -11,7 +11,7 @@ body{
     width: 100%;
     position: fixed;
     background-color: #c82c2c;
-    padding: 0px 16px;   
+    padding: 0rem 1rem;   
     top: 0; /*Fixing the margin in the packages page*/
     z-index: 1;
 }
@@ -24,7 +24,7 @@ body{
 .main-header__brand{
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -37,14 +37,14 @@ body{
 
 .main-nav__item{
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.4rem;
 }
 
 .main-nav__item a{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 3px;
+    padding: 0.3rem;
 }
 
 
@@ -57,7 +57,7 @@ body{
 .main-nav__item--cta a{
     color: #ff0000;
     background: white;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -70,8 +70,8 @@ body{
 
 .main-footer{
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links{
@@ -83,7 +83,7 @@ body{
 
 .main-footer__link{
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 2rem;
 
 }
 
@@ -102,9 +102,9 @@ body{
     background: #ff0000;
     color: white;
     font: inherit;
-    margin: 6px;
+    margin: 0.4rem;
     border: 1.5px soild #ff0000;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     cursor: pointer;
 }
