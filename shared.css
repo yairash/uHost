@@ -7,6 +7,17 @@ body{
     margin: 0;
 }
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
 .main-header{
     width: 100%;
     position: fixed;
@@ -21,17 +32,41 @@ body{
     vertical-align: middle;
 }
 
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+}
+
+
 .main-header__brand{
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 .main-nav{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 72px);
+    width: calc(100% - 123px);
     vertical-align: middle;
 }
 
@@ -40,7 +75,8 @@ body{
     margin: 0 0.4rem;
 }
 
-.main-nav__item a{
+.main-nav__item a,
+.mobile-nav__item a{
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -54,7 +90,8 @@ body{
     border-bottom: 2px solid #ffa9a9;
 }
 
-.main-nav__item--cta a{
+.main-nav__item--cta a,
+.mobile-nav__item--cta a{
     color: #ff0000;
     background: white;
     padding: 0.5rem 1rem;
@@ -62,7 +99,9 @@ body{
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active{
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active{
     color: white;
     background: #ffa9a9;
     border: none;
@@ -117,3 +156,35 @@ body{
 .plan__button:focus{
     outline: none;
 }
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: rgb(124, 14, 14);
+    width: 80%;
+    height: 100vh;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+  .open{
+      display: block !important;
+  }
