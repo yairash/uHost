@@ -17,10 +17,10 @@ for (let i = 0; i < buttons.length; i++) {
 function closeModal() {
     // backdrop.style.display = 'none';
     // modal.style.display = 'none';
-    if(moda)
-        backdrop.classList.remove('open');
-        
-    modal.classList.remove('open');
+    if(modal)
+        modal.classList.remove('open');
+    
+        backdrop.classList.remove('open');    
 }
 if(modalNoButton)
     modalNoButton.addEventListener('click', closeModal);
