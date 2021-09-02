@@ -7,6 +7,10 @@ body{
     margin: 0;
 }
 
+main{
+    min-height: calc(100vh - 3.25rem - 8.25rem); 
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -66,8 +70,6 @@ body{
 .main-nav{
     display: none;
 }
-
-
 
 .main-nav__item{
     display: inline-block;

@@ -1,5 +1,5 @@
 main{
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 .background-img{
@@ -14,6 +14,7 @@ main{
     margin: 1rem 0;
     border: solid #690303 4px;
     border-left: none;
+    position: relative;
 }
 
 .package-overview:hover,
@@ -46,7 +47,6 @@ main{
 #plus-package{
     background: #ffa9a9;
     position: relative;
-    top: 2rem;
 }
 
 #package__badge{
@@ -69,7 +69,6 @@ main{
     border: solid #690303 4px;
     border-right: none;
     position: relative;
-    top: 2rem;
 }
 
 #free-package:hover,
@@ -81,11 +80,27 @@ main{
 #premium-package{
     background: #690303;
     position: relative;
-    top: 2rem;
 }
 
 .premium-package h1{
     color: white;
+}
+
+@media (min-width: 55rem){
+    main{
+        margin: 3.25rem auto;
+        max-width: 1600px;
+    }
+}
+
+@media (min-width: 1600px){
+    .package-overview{
+        border-left: solid #690303 4px;
+    }
+
+    #free-package{
+        border-right: solid #690303 4px;
+    }
 }
 
 
