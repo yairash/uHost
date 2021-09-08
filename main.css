@@ -104,19 +104,25 @@
 @media (min-width: 55rem){
     .plan{
         width: 30%; 
-        display: inline-block;
-        vertical-align: middle;
         min-width: 15.5rem;
         max-width: 23rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
     }
 
     .plan__list{
         width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .plan-highlighted{
         box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.5);    
+        height: 30rem;
+        z-index: 50;
     }
 }
 #key-features{
@@ -145,9 +151,12 @@
 
 @media (min-width: 55rem){
     .key-feature{
-        display: inline-block;
         width: 30%;
-        vertical-align: top;
+    }
+
+    .key-features__list{
+        display: flex;
+        justify-content: center;
     }
 }
 
