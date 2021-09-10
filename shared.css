@@ -2,13 +2,20 @@
     box-sizing: border-box; /*includes border and padding of an element*/
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Arvo', serif;;
     margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto fit-content(8rem);
 }
 
 main{
-    min-height: calc(100vh - 3.25rem - 8.25rem); 
+    /* min-height: calc(100vh - 3.25rem - 8.25rem);  we changed to the solution with the grid*/
     margin-top: 3.25rem;
 }
 
