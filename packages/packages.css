@@ -15,6 +15,7 @@ main{
     border: solid #690303 4px;
     border-left: none;
     position: relative;
+    overflow: hidden;
 }
 
 .package-overview:hover,
@@ -53,14 +54,17 @@ main{
     position: absolute; /*position the element base on the ancestor of the element*/
     top: 0;
     right: 0;
-    margin: 1.25rem;   
+    margin: 0;   
     font-size: 0.75rem;
     color: red;
     background-color: rgb(255, 255, 104);
     padding: 0.5rem;
-    
     border-radius: 50%;
     height: 2rem;
+
+    transform: rotateZ(45deg) translateX(5rem) translateY(-1.5rem);
+    width: 15rem;
+    text-align: center;
 }
 
 #free-package{
