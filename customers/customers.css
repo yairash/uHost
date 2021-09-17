@@ -12,6 +12,10 @@
     box-shadow: 3px 3px 4px 3px  rgba(0, 0, 0, 0.4);
 }
 
+.testimonial__image-container:hover{
+    animation: flip-customer 1s 0.3s linear forwards;
+}
+
 .testimonial__image{
     width: 100%;
     vertical-align: top; /*remove extra box-shadow under photos*/
@@ -81,5 +85,19 @@
         text-align: left; /* I changed to left - the course project default was right */ 
     }
 
+}
+
+@keyframes flip-customer{
+    0%{
+        transform: rotateY(0deg);
+    }
+    
+    50%{
+        transform: rotateY(160deg);
+    }
+
+    100%{
+        transform: rotateY(360deg);
+    }
 }
 
